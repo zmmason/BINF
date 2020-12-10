@@ -75,7 +75,7 @@ class BaumWelch:
         return condProb
 
     def siProb(self, forwarProbs, forwardSink, backwardProbs):
-        """"""
+        """Calculate si probabilities for transition matrix."""
         siMatrix = np.zeros((len(self.states), len(self.emission) - 1, len(self.states)))  # initializing si matrix
         for i in range(len(self.emission) - 1):
             for j in range(len(self.states)):
@@ -85,7 +85,7 @@ class BaumWelch:
         return self.convertTransMatrix(siMatrix)
 
     def gammaProb(self, forwarProbs, forwardSink, backwardProbs):
-        """"""
+        """Calculate gamma probabilities for emission matrix."""
         gammaMatrix = np.zeros((len(self.states), len(self.emission)))  # initializing gamma matrix
         for i in range(len(self.emission)):
             for j in range(len(self.states)):  # get gamma prob for matrix
