@@ -33,8 +33,8 @@ class BaumWelch:
         for i in self.statesDict:
             self.statesDict[i] = x
             y += 1
-        self.transMatrix = transMatrix  # takes the log of each item in the transition matrix
-        self.emisMatrix = emisMatrix  # takes the log of each item in the emission matrix
+        self.transMatrix = transMatrix
+        self.emisMatrix = emisMatrix
         self.endProb = 1 / len(self.emission)  # probability of ending node
         self.startProb = 1 / len(self.states)  # probability of starting node
 
