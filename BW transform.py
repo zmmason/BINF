@@ -1,6 +1,5 @@
 # !/usr/bin/env python3
 # Burrows–Wheeler transform
-# Estimate the Parameters of an HMM
 # University of California, Santa Cruz - BME 230A
 # Biomolecular Engineering and Bioinformatics
 # Name: (zmmason)
